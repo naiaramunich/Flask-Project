@@ -17,14 +17,18 @@ def hello():
 #    return "Hello World!"
     return render_template("index.html")
 
-@app.route("/1006")
-def test123():
+@app.route("/aboutme")
+def aboutme():
 #    return "<p>This is my <b>1006 </b> website! <p>"
-    return render_template("1006.html")
+    return render_template("aboutme.html")
 
 @app.route("/columbia")
 def columbia(): 
     return "Columbia!"
+
+@app.route("/myclasses")
+def myclasses(): 
+    return render_template("myclasses.html")
 
 #start the server
 if __name__ == "__main__":
