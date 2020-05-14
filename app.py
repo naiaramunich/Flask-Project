@@ -22,10 +22,6 @@ def aboutme():
 #    return "<p>This is my <b>1006 </b> website! <p>"
     return render_template("aboutme.html")
 
-@app.route("/columbia")
-def columbia(): 
-    return "Columbia!"
-
 @app.route("/myclasses")
 def myclasses(): 
     return render_template("myclasses.html")
